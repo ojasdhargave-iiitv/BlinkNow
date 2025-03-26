@@ -1,0 +1,4162 @@
+import React from "react";
+import styled from "styled-components";
+
+const StyledRectangle24 = styled.div`
+  width: 1517px;
+  height: 818px;
+  left: -1px;
+  top: 127px;
+  position: absolute;
+`;
+
+const StyledEllipse4 = styled.div`
+  width: 696px;
+  height: 696px;
+  left: 399px;
+  top: 166px;
+  position: absolute;
+  background: rgba(217, 217, 217, 0.60);
+  box-shadow: 104.5px 104.5px 104.5px ;
+  border-radius: 9999px;
+  filter: blur(52.25px);
+`;
+
+const StyledRectangle5 = styled.div`
+  width: 1534px;
+  height: 150px;
+  left: -11px;
+  top: -23px;
+  position: absolute;
+  border: 1px black solid;
+`;
+
+const StyledBlinknowspan01 = styled.span`
+  color: #F8CA00;
+  font-size: 60px;
+  font-family: Inter;
+  font-weight: 800;
+  word-wrap: break-word;
+`;
+
+const StyledBlinknowspan02 = styled.span`
+  color: #00CE29;
+  font-size: 60px;
+  font-family: Inter;
+  font-weight: 800;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle7 = styled.div`
+  width: 120px;
+  height: 59px;
+  left: 1138px;
+  top: 42px;
+  position: absolute;
+  border-radius: 15px;
+  border: 0.50px black solid;
+`;
+
+const StyledRectangle8 = styled.div`
+  width: 378px;
+  height: 59px;
+  left: 721px;
+  top: 43px;
+  position: absolute;
+  background: #D9D9D9;
+  border-radius: 15px;
+  border: 0.50px black solid;
+`;
+
+const StyledLoginspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 800;
+  word-wrap: break-word;
+`;
+
+const StyledDeliveringin8minutesspan = styled.span`
+  color: black;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 800;
+  word-wrap: break-word;
+`;
+
+const StyledIiitvadodaragandhinagargujaratindiaspan = styled.span`
+  color: black;
+  font-size: 15px;
+  font-family: Kumbh Sans;
+  font-weight: 400;
+  line-height: 17.96px;
+  word-wrap: break-word;
+`;
+
+const StyledSearchspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Kumbh Sans;
+  font-weight: 300;
+  line-height: 19.16px;
+  word-wrap: break-word;
+`;
+
+const StyledLine1 = styled.div`
+  width: 125px;
+  height: 0px;
+  left: 360px;
+  top: 2px;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  outline: 1px black solid;
+  outline-offset: -0.50px;
+`;
+
+const StyledVector = styled.div`
+  width: 16px;
+  height: 16px;
+  left: 3px;
+  top: 3px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector01 = styled.div`
+  width: 4.35px;
+  height: 4.35px;
+  left: 16.65px;
+  top: 16.65px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledImage1 = styled.img`
+  width: 343px;
+  height: 686px;
+  left: 0px;
+  top: 218px;
+  position: absolute;
+`;
+
+const StyledImage2 = styled.img`
+  width: 336.50px;
+  height: 673px;
+  left: 1175px;
+  top: 207px;
+  position: absolute;
+`;
+
+const StyledOrderthefoodandgroceriesandspan = styled.span`
+  color: black;
+  font-size: 64px;
+  font-family: Kumbh Sans;
+  font-weight: 900;
+  word-wrap: break-word;
+`;
+
+const StyledDiscoverthebestdealspan = styled.span`
+  color: black;
+  font-size: 64px;
+  font-family: Kumbh Sans;
+  font-weight: 900;
+  word-wrap: break-word;
+`;
+
+const StyledWithblinknowspan = styled.span`
+  color: black;
+  font-size: 64px;
+  font-family: Kumbh Sans;
+  font-weight: 900;
+  word-wrap: break-word;
+`;
+
+const StyledUnder10minutesspan = styled.span`
+  color: black;
+  font-size: 64px;
+  font-family: Kumbh Sans;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle9 = styled.div`
+  width: 395px;
+  height: 92px;
+  left: 176px;
+  top: 693px;
+  position: absolute;
+  background: #D9D9D9;
+  border-radius: 24px;
+`;
+
+const StyledRectangle10 = styled.div`
+  width: 713px;
+  height: 92px;
+  left: 589px;
+  top: 693px;
+  position: absolute;
+  background: #D9D9D9;
+  border-radius: 28px;
+`;
+
+const StyledSearchforgrocerieselectronicsandstationariesspan = styled.span`
+  color: black;
+  font-size: 20px;
+  font-family: Kumbh Sans;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledVector02 = styled.div`
+  width: 16px;
+  height: 16px;
+  left: 3px;
+  top: 3px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector03 = styled.div`
+  width: 4.35px;
+  height: 4.35px;
+  left: 16.65px;
+  top: 16.65px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledEnteryourdeliverylocationspan = styled.span`
+  color: black;
+  font-size: 20px;
+  font-family: Kumbh Sans;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledVector04 = styled.div`
+  width: 17px;
+  height: 8.50px;
+  left: 8.50px;
+  top: 12.75px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector05 = styled.div`
+  width: 18px;
+  height: 22px;
+  left: 3px;
+  top: 1px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector06 = styled.div`
+  width: 6px;
+  height: 6px;
+  left: 9px;
+  top: 7px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledRectangle11 = styled.div`
+  width: 245px;
+  height: 245px;
+  left: 222px;
+  top: 962px;
+  position: absolute;
+  background: #D9D9D9;
+  border-radius: 50px;
+`;
+
+const StyledRectangle12 = styled.div`
+  width: 245px;
+  height: 245px;
+  left: 486px;
+  top: 962px;
+  position: absolute;
+  background: #D9D9D9;
+  border-radius: 50px;
+`;
+
+const StyledRectangle13 = styled.div`
+  width: 245px;
+  height: 245px;
+  left: 750px;
+  top: 962px;
+  position: absolute;
+  background: #D9D9D9;
+  border-radius: 50px;
+`;
+
+const StyledRectangle14 = styled.div`
+  width: 245px;
+  height: 245px;
+  left: 1013px;
+  top: 962px;
+  position: absolute;
+  background: #D9D9D9;
+  border-radius: 50px;
+`;
+
+const StyledRectangle15 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 231px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle19 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 231px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle16 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 289px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle20 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 289px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle17 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 347px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle21 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 347px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle18 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 405px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle22 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 405px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1501 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 495px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1901 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 495px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1601 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 553px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle2001 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 553px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1701 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 611px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle2101 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 611px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1801 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 669px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle2201 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 669px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1502 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 759px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1902 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 759px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1602 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 817px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle2002 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 817px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1702 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 875px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle2102 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 875px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1802 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 933px;
+  top: 1009px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle2202 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 933px;
+  top: 1067px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1503 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 1023px;
+  top: 1007px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1903 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 1023px;
+  top: 1065px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1603 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 1081px;
+  top: 1007px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle2003 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 1081px;
+  top: 1065px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1703 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 1139px;
+  top: 1007px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle2103 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 1139px;
+  top: 1065px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle1803 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 1197px;
+  top: 1007px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledRectangle2203 = styled.div`
+  width: 54px;
+  height: 54px;
+  left: 1197px;
+  top: 1065px;
+  position: absolute;
+  background: #929292;
+  border-radius: 10px;
+`;
+
+const StyledFooddeliveryspan = styled.span`
+  color: black;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 800;
+  word-wrap: break-word;
+`;
+
+const StyledElectronicsspan = styled.span`
+  color: black;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 800;
+  word-wrap: break-word;
+`;
+
+const StyledHouseholdessentialspan = styled.span`
+  color: black;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 800;
+  line-height: 28.88px;
+  word-wrap: break-word;
+`;
+
+const StyledShopbystorespan = styled.span`
+  color: black;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 800;
+  line-height: 28.88px;
+  word-wrap: break-word;
+`;
+
+const StyledEllipse3 = styled.div`
+  width: 42px;
+  height: 42px;
+  left: 719px;
+  top: 1295px;
+  position: absolute;
+  border-radius: 9999px;
+  border: 3px #6B6B6B solid;
+`;
+
+const StyledSpan = styled.span`
+  color: #6B6B6B;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 24.07px;
+  word-wrap: break-word;
+`;
+
+const StyledLine2 = styled.div`
+  width: 36px;
+  height: 0px;
+  left: 739px;
+  top: 1261px;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  outline: 3px #6B6B6B solid;
+  outline-offset: -1.50px;
+`;
+
+const StyledLine3 = styled.div`
+  width: 36px;
+  height: 0px;
+  left: 739px;
+  top: 1336px;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  outline: 3px #6B6B6B solid;
+  outline-offset: -1.50px;
+`;
+
+const StyledWelcomespan = styled.span`
+  color: black;
+  font-size: 96px;
+  font-family: Aesthetic Romance;
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 115.53px;
+  word-wrap: break-word;
+`;
+
+const StyledOrdernowtoavailexcitingoffersspan = styled.span`
+  color: black;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24.07px;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle6 = styled.div`
+  width: 158px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #00A020;
+  border-radius: 15px;
+`;
+
+const StyledMycartspan = styled.span`
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 800;
+  word-wrap: break-word;
+`;
+
+const StyledVector07 = styled.div`
+  width: 2px;
+  height: 2px;
+  left: 8px;
+  top: 20px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector08 = styled.div`
+  width: 2px;
+  height: 2px;
+  left: 19px;
+  top: 20px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector09 = styled.div`
+  width: 22px;
+  height: 15px;
+  left: 1px;
+  top: 1px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledScreenshot202503101035411 = styled.div`
+  width: 1392.44px;
+  height: 401px;
+  left: 51px;
+  top: 1434px;
+  position: absolute;
+`;
+
+const StyledEllipse5 = styled.div`
+  width: 120px;
+  height: 120px;
+  left: 421px;
+  top: 1252px;
+  position: absolute;
+  background: #D9D9D9;
+  box-shadow: 104.5px 104.5px 104.5px ;
+  border-radius: 9999px;
+  filter: blur(52.25px);
+`;
+
+const StyledEllipse6 = styled.div`
+  width: 120px;
+  height: 120px;
+  left: 949px;
+  top: 1252px;
+  position: absolute;
+  background: #D9D9D9;
+  box-shadow: 104.5px 104.5px 104.5px ;
+  border-radius: 9999px;
+  filter: blur(52.25px);
+`;
+
+const StyledFreedeliveryspan = styled.span`
+  color: black;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 800;
+  line-height: 38.51px;
+  word-wrap: break-word;
+`;
+
+const StyledFlat50offspan = styled.span`
+  color: black;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 800;
+  line-height: 38.51px;
+  word-wrap: break-word;
+`;
+
+const StyledOnyourfirstorderspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 19.25px;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle23 = styled.div`
+  width: 387px;
+  height: 16px;
+  left: 295px;
+  top: 1364px;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #8A8A8A 50%, rgba(255, 255, 255, 0) 100%);
+`;
+
+const StyledAbove299span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 16.85px;
+  word-wrap: break-word;
+`;
+
+const StyledVector10 = styled.div`
+  width: 10.62px;
+  height: 9.21px;
+  left: 0.71px;
+  top: 2.12px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector11 = styled.div`
+  width: 4.96px;
+  height: 5.67px;
+  left: 11.33px;
+  top: 5.67px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector12 = styled.div`
+  width: 3.54px;
+  height: 3.54px;
+  left: 2.12px;
+  top: 11.33px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector13 = styled.div`
+  width: 3.54px;
+  height: 3.54px;
+  left: 11.33px;
+  top: 11.33px;
+  position: absolute;
+  outline: 2px black solid;
+  outline-offset: -1px;
+`;
+
+const StyledOnfirst10ordersspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 19.25px;
+  word-wrap: break-word;
+`;
+
+const StyledHotdealsspan = styled.span`
+  color: black;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledYourdailyfreshneedsspan = styled.span`
+  color: black;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledCookingideasspan = styled.span`
+  color: black;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle39 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled5070span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled5070span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kgspan = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhandspan = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 14px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle41 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 14px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector14 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector15 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8minsspan = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle42 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 88px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAddspan = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3901 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1408px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507001span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507001span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg01span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand01span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage01 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1422px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4101 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1422px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector16 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector17 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins01span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4201 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 1496px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd01span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3902 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 176px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507002span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507002span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg02span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand02span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage02 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 190px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4102 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 190px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector18 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector19 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins02span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4202 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 264px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd02span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3903 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1584px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507003span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507003span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg03span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand03span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage03 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1598px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4103 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1598px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector20 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector21 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins03span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4203 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 1672px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd03span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3904 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 352px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507004span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507004span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg04span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand04span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage04 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 366px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4104 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 366px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector22 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector23 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins04span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4204 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 440px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd04span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3905 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1760px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507005span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507005span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg05span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand05span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage05 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1774px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4105 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1774px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector24 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector25 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins05span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4205 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 1848px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd05span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3906 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 528px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507006span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507006span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg06span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand06span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage06 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 542px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4106 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 542px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector26 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector27 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins06span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4206 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 616px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd06span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3907 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1936px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507007span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507007span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg07span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand07span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage07 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1950px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4107 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1950px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector28 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector29 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins07span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4207 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 2024px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd07span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3908 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 704px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507008span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507008span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg08span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand08span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage08 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 718px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4108 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 718px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector30 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector31 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins08span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4208 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 792px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd08span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3909 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 2112px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507009span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507009span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg09span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand09span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage09 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 2126px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4109 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 2126px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector32 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector33 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins09span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4209 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 2200px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd09span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3910 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 880px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507010span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507010span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg10span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand10span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage10 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 894px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4110 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 894px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector34 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector35 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins10span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4210 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 968px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd10span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3911 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 2288px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507011span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507011span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg11span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand11span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage11 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 2302px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4111 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 2302px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector36 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector37 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins11span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4211 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 2376px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd11span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3912 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1056px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507012span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507012span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg12span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand12span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage12 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1070px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4112 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1070px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector38 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector39 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins12span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4212 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 1144px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd12span = styled.span`
+color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3913 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 2464px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507013span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507013span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg13span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand13span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage13 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 2478px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4113 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 2478px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector40 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector41 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins13span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4213 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 2552px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd13span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3914 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1232px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507014span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507014span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg14span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand14span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage14 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1246px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4114 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1246px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector42 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector43 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins14span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4214 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 1320px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd14span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3915 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 2640px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507015span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507015span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg15span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand15span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage15 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 2654px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4115 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 2654px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector44 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector45 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins15span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4215 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 2728px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd15span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3916 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507016span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507016span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg16span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand16span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage16 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 14px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4116 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 14px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector46 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector47 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins16span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4216 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 88px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd16span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3917 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1408px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507017span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507017span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg17span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand17span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage17 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1422px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4117 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1422px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector48 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector49 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins17span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4217 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 1496px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd17span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3918 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 176px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507018span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507018span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg18span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand18span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage18 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 190px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4118 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 190px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector50 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector51 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins18span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4218 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 264px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd18span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3919 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1584px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507019span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507019span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg19span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand19span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage19 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1598px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4119 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1598px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector52 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector53 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins19span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4219 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 1672px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd19span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3920 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 352px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507020span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507020span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg20span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand20span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage20 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 366px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4120 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 366px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector54 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector55 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins20span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4220 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 440px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd20span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3921 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1760px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507021span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507021span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg21span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand21span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage21 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1774px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4121 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1774px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector56 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector57 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins21span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4221 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 1848px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd21span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3922 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 528px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507022span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507022span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg22span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand22span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage22 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 542px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4122 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 542px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector58 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector59 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins22span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4222 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 616px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd22span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3923 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1936px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507023span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507023span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg23span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand23span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage23 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1950px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4123 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1950px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector60 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector61 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins23span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4223 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 2024px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd23span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3924 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 704px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507024span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507024span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg24span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand24span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage24 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 718px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4124 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 718px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector62 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector63 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins24span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4224 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 792px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd24span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3925 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 2112px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507025span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507025span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg25span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand25span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage25 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 2126px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4125 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 2126px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector64 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector65 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins25span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4225 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 2200px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd25span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3926 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 880px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507026span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507026span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg26span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand26span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage26 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 894px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4126 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 894px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector66 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector67 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins26span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4226 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 968px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd26span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3927 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 2288px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507027span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507027span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg27span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand27span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage27 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 2302px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4127 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 2302px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector68 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector69 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins27span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4227 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 2376px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd27span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3928 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 1056px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507028span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507028span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg28span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand28span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage28 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 1070px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4128 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 1070px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector70 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector71 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins28span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4228 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 1144px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd28span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle3929 = styled.div`
+  width: 158px;
+  height: 224px;
+  left: 2464px;
+  top: 0px;
+  position: absolute;
+`;
+
+const Styled507029span01 = styled.span`
+  color: black;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const Styled507029span02 = styled.span`
+  color: #535353;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: line-through;
+  word-wrap: break-word;
+`;
+
+const Styled1kg29span = styled.span`
+  color: #6B6B6B;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledWholefarmgrocerysugarpacketkhand29span = styled.span`
+  color: black;
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledImage29 = styled.img`
+  width: 130px;
+  height: 130px;
+  left: 2478px;
+  top: 0px;
+  position: absolute;
+  border-radius: 18px;
+  border: 0.30px #535353 solid;
+`;
+
+const StyledRectangle4129 = styled.div`
+  width: 39px;
+  height: 11px;
+  left: 2478px;
+  top: 137px;
+  position: absolute;
+  background: #AAAAAA;
+  border-radius: 3px;
+`;
+
+const StyledVector72 = styled.div`
+  width: 6.66px;
+  height: 6.66px;
+  left: 0.92px;
+  top: 0.92px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const StyledVector73 = styled.div`
+  width: 1.66px;
+  height: 3.33px;
+  left: 4.25px;
+  top: 1.75px;
+  position: absolute;
+  outline: 0.80px black solid;
+  outline-offset: -0.40px;
+`;
+
+const Styled8mins29span = styled.span`
+  color: black;
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
+
+const StyledRectangle4229 = styled.div`
+  width: 56px;
+  height: 19px;
+  left: 2552px;
+  top: 190px;
+  position: absolute;
+  background: rgba(0, 206.13, 41.22, 0.10);
+  border-radius: 4px;
+  border: 0.50px #00A020 solid;
+`;
+
+const StyledAdd29span = styled.span`
+  color: #00A020;
+  font-size: 8px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
