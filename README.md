@@ -1,5 +1,5 @@
 # BlinkNow
-This is CS102 project i.e. cloning BlinkIt-- it is your everyday online grocery shopping app that home-delivers 10,000+ daily groceries in just a blink
+This is CS162 project i.e. cloning BlinkIt-- it is your everyday online grocery shopping app that home-delivers 10,000+ daily groceries in just a blink
 
 made by
 Jamil Ahmed Sayyed - 202451080
