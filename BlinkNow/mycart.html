@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="mycart.css">
+
+</head>
+
+<body>
+  <div class="cart-modal">
+    <div class="cart-container">
+      <div class="cart-page">
+        <div class="title-container">
+          <div class="title">My Cart</div>
+          <div class="icon">x</div>
+        </div>
+      </div>
+      <div class="cartstyled">
+        <div class="shipment-slot-container">
+          <div class="shipment-slot-image-container">
+            <img alt="image"
+              src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=180/assets/eta-icons/15-mins-filled.png"
+              loading="lazy" class="shipment-slot-image">
+          </div>
+          <div class="shipment-slot-text-wrapper">
+            <div class="shipment-slot-heading" id="deliveryTime">Delivery time loading...</div>
+            <div class="shipment-slot-highlight">Shipment of 2 items</div>
+          </div>
+        </div>
+
+
+        <div class="product-slot-container">
+          <div class="product-container">
+
+            <div class="product-left-container">
+              <div class="product-slot-image-container">
+                <img alt="Limca Lemon 'N' Lime Soft Drink 750 ml"
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=135/app/assets/products/sliding_images/jpeg/9a7f01e0-e63e-407e-bfc9-449c165f7a1c.jpg?ts=1728051043"
+                  loading="lazy" class="product-slot-image">
+              </div>
+            </div>
+            <div class="product-right-container">
+              <div class="product-slot-text-wrapper">
+                <div class="product-slot-title">Limca Lemon 'N' Lime Soft Drink 750 ml</div>
+                <div class="product-slot-variant">750ml</div>
+                <div class="product-slot-price">₹45</div>
+              </div>
+              <div class="product-slot-button">
+                <div class="addbutton">
+                  <div class="addbutton-elements-minus">&#8722;</div>
+                  <div class="addbutton-elements-quantity">1</div>
+                  <div class="addbutton-elements-plus">&#43;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-container">
+
+            <div class="product-left-container">
+              <div class="product-slot-image-container">
+                <img alt="Rolled Cones by SLIMJIM"
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=135/da/cms-assets/cms/product/ad69d94f-1ba9-41d3-b140-7cf1ad39a86c.jpg?ts=1733735839"
+                  loading="lazy" class="product-slot-image">
+              </div>
+            </div>
+            <div class="product-right-container">
+              <div class="product-slot-text-wrapper">
+                <div class="product-slot-title">Rolled Cones by SLIMJIM</div>
+                <div class="product-slot-variant">1 pack (6 pieces)</div>
+                <div class="product-slot-price">₹90</div>
+              </div>
+              <div class="product-slot-button">
+                <div class="addbutton">
+                  <div class="addbutton-elements-minus">&#8722;</div>
+                  <div class="addbutton-elements-quantity">2</div>
+                  <div class="addbutton-elements-plus">&#43;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="billing-slot-container">
+
+          <div class="billing-slot-header-container">
+            <div class="billing-slot-title">Bill details</div>
+          </div>
+
+          <div class="billing-slot-middle-container">
+            <div class="billing-slot-price-container">
+              <div class="billing-slot-price-left-container">
+                <img alt="image" src="images/subtotal.jpg" loading="lazy" class="billing-slot-subtotal-icon">
+                <div class="billing-slot-product-price">Sub Total</div>
+              </div>
+              <div class="billing-slot-product-price-value">₹96</div>
+            </div>
+            <div class="billing-slot-price-container">
+              <div class="billing-slot-price-left-container">
+                <img alt="image" src="images/delivery.png" loading="lazy" class="billing-slot-delivery-icon">
+                <div class="billing-slot-product-price">Delivery charge</div>
+                <img alt="delivery-info" src="images/info.png" loading="lazy" class="billing-slot-delivery-info-icon">
+              </div>
+              <div class="billing-slot-product-price-value">₹30</div>
+            </div>
+            <div class="billing-slot-price-container">
+              <div class="billing-slot-price-left-container">
+                <img alt="image" src="images/handling.jpg" loading="lazy" class="billing-slot-handling-icon">
+                <div class="billing-slot-product-price">Handling charge</div>
+                <img alt="handling-info" src="images/info.png" loading="lazy" class="billing-slot-handling-info-icon">
+              </div>
+              <div class="billing-slot-product-price-value">₹4</div>
+            </div>
+          </div>
+
+          <div class="billing-slot-footer-container">
+            <div class="billing-slot-total-container">
+              <div class="billing-slot-total">Grand Total</div>
+              <div class="billing-slot-total-price">₹150</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="cancellation-policy-container">
+          <div class="cancellation-policy-title">Cancellation Policy</div>
+          <div class="cancellation-policy-content">Orders cannot be cancelled once packed for delivery. In case of
+            unexpected delays, a refund will be provided, if applicable.</div>
+        </div>
+
+        <div class="cart-checkout-container">
+          <div class="address-strip-container">
+            <div class="address-strip-icon-container">
+              <img alt="address-icon" src="images/pin.png" loading="lazy" class="address-strip-icon">
+            </div>
+            <div class="address-strip-text-container">
+              <div class="address-strip-title">Delivering to home</div>
+              <div class="address-strip-subheading" id="currentAddress">
+                Loading address...
+              </div>
+            </div>
+          </div>
+          <div class="checkout-strip-container">
+            <div class="checkout-button">
+              <div class="checkout-price-text-container">
+                <div class="checkout-price-text">₹145</div>
+                <div class="checkout-total-text">TOTAL</div>
+              </div>
+              <div class="checkout-procede-text">Procede To Buy</div>
+              <div class="checkout-procede-icon">></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <input type="hidden" id="deliveryLocationInput" />
+    <script>
+      function closeCart() {
+        window.parent.postMessage('closeCart', '*');
+      }
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.icon').addEventListener('click', closeCart);
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+
+        document.querySelector('.icon').addEventListener('click', closeCart);
+
+        updateDeliveryTime();
+
+        document.getElementById('currentAddress').textContent =
+          localStorage.getItem('blinkNowAddress') || 'Set your delivery address';
+      });
+
+      function closeCart() {
+        window.parent.postMessage('closeCart', '*');
+      }
+
+      function increaseQuantity(productId) {
+        window.parent.postMessage({
+          action: 'increaseQuantity',
+          productId: productId
+        }, '*');
+      }
+
+      function decreaseQuantity(productId) {
+        window.parent.postMessage({
+          action: 'decreaseQuantity',
+          productId: productId
+        }, '*');
+      }
+    </script>
+
+    <script src="scripts/location.js"></script>
+</body>
+
+</html>
