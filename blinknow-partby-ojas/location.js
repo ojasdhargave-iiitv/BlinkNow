@@ -1,6 +1,37 @@
 // location.js
+const deliveryLocationInput = document.getElementById('deliveryLocationInput');
+
+function updateDeliveryInfo() {
+
+    const deliveryInput = document.getElementById('deliveryLocationInput');
+    currentAddressEl.textContent = currentLocation.address;
+    deliveryInput.value = currentLocation.address;
+}
+function selectLocation(location) {
+    currentLocation = {
+        address: location.display_name,
+        coordinates: {
+            lat: parseFloat(location.lat),
+            lng: parseFloat(location.lon)
+        }
+    };
+    
+    localStorage.setItem('deliveryLocation', JSON.stringify(currentLocation));
+    updateDeliveryInfo();
+    estimateDeliveryTime();
+    locationModal.style.display = 'none';
+}
+deliveryLocationInput.addEventListener('click', function() {
+    locationModal.style.display = 'flex';
+    locationSearch.focus();
+});
+document.getElementById('deliveryLocationInput').addEventListener('click', function() {
+    document.getElementById('locationModal').style.display = 'flex';
+});
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
     const deliveryTimeEl = document.getElementById('deliveryTime');
     const currentAddressEl = document.getElementById('currentAddress');
     const useCurrentLocationBtn = document.getElementById('useCurrentLocation');
@@ -10,16 +41,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const locationResults = document.getElementById('locationResults');
     const closeModal = document.querySelector('.close-modal');
     
-    // Current location data
     let currentLocation = {
         address: 'IIIT Vadodara, Gandhinagar, Gujarat, India',
         coordinates: null
     };
-    
-    // Initialize
     initLocation();
-    
-    // Event listeners
+
     useCurrentLocationBtn.addEventListener('click', function(e) {
         e.preventDefault();
         getCurrentLocation();
@@ -40,8 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             locationModal.style.display = 'none';
         }
     });
-    
-    // Search locations when typing
+
     let searchTimeout;
     locationSearch.addEventListener('input', function() {
         clearTimeout(searchTimeout);
@@ -51,25 +77,27 @@ document.addEventListener('DOMContentLoaded', function() {
             searchTimeout = setTimeout(() => {
                 searchLocations(query);
             }, 300);
+        } else {
+            locationResults.innerHTML = '';
         }
     });
     
-    // Initialize location
     function initLocation() {
-        // Try to get from localStorage first
         const savedLocation = localStorage.getItem('deliveryLocation');
         if (savedLocation) {
             currentLocation = JSON.parse(savedLocation);
             updateDeliveryInfo();
+            estimateDeliveryTime();
             return;
         }
         
-        // Otherwise try to detect
-        getCurrentLocation();
+        updateDeliveryInfo();
+        estimateDeliveryTime();
     }
     
-    // Get current location using browser geolocation
     function getCurrentLocation() {
+        deliveryTimeEl.textContent = 'Detecting your location...';
+        
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 async (position) => {
@@ -77,56 +105,63 @@ document.addEventListener('DOMContentLoaded', function() {
                     currentLocation.coordinates = { lat: latitude, lng: longitude };
                     
                     try {
-                        // Call your backend to get address from coordinates
-                        const response = await fetch('/api/location/current', {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify({
-                                lat: latitude,
-                                lng: longitude
-                            })
-                        });
+                        const response = await fetch(
+                            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
+                        );
                         
                         const data = await response.json();
                         
-                        if (response.ok) {
-                            currentLocation.address = data.address;
+                        if (data.address) {
+                            const addressParts = [];
+                            if (data.address.road) addressParts.push(data.address.road);
+                            if (data.address.suburb) addressParts.push(data.address.suburb);
+                            if (data.address.city) addressParts.push(data.address.city);
+                            if (data.address.state) addressParts.push(data.address.state);
+                            if (data.address.country) addressParts.push(data.address.country);
+                            
+                            currentLocation.address = addressParts.join(', ');
                             localStorage.setItem('deliveryLocation', JSON.stringify(currentLocation));
                             updateDeliveryInfo();
                             estimateDeliveryTime();
                         } else {
-                            throw new Error(data.error || 'Failed to get address');
+                            throw new Error('Address not found in response');
                         }
                     } catch (error) {
                         console.error('Error getting address:', error);
-                        currentLocation.address = 'Location detected (address unavailable)';
+                        currentLocation.address = 'Current location (address unavailable)';
                         updateDeliveryInfo();
+                        estimateDeliveryTime();
                     }
                 },
                 (error) => {
                     console.error('Geolocation error:', error);
                     currentLocation.address = 'Location access denied';
                     updateDeliveryInfo();
+                    estimateDeliveryTime();
                 }
             );
         } else {
             currentLocation.address = 'Geolocation not supported';
             updateDeliveryInfo();
+            estimateDeliveryTime();
         }
     }
     
-    // Search for locations using backend API
+    //api
     async function searchLocations(query) {
+        locationResults.innerHTML = '<div class="location-result">Searching...</div>';
+        
         try {
-            const response = await fetch(`/api/location/search?query=${encodeURIComponent(query)}`);
+            //OpenStreetMap Nominatim API for geocoding
+            const response = await fetch(
+                `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&addressdetails=1`
+            );
             const data = await response.json();
             
-            if (response.ok) {
+            if (data.length > 0) {
                 displayLocationResults(data);
             } else {
-                throw new Error(data.error || 'Search failed');
+                locationResults.innerHTML = '<div class="location-result">No results found</div>';
             }
         } catch (error) {
             console.error('Location search error:', error);
@@ -134,19 +169,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Display search results
     function displayLocationResults(results) {
         locationResults.innerHTML = '';
-        
-        if (results.length === 0) {
-            locationResults.innerHTML = '<div class="location-result">No results found</div>';
-            return;
-        }
         
         results.forEach(result => {
             const div = document.createElement('div');
             div.className = 'location-result';
-            div.textContent = result.description;
+            let displayName = result.display_name;
+            if (displayName.length > 60) {
+                displayName = displayName.substring(0, 60) + '...';
+            }
+            
+            div.textContent = displayName;
             div.addEventListener('click', () => {
                 selectLocation(result);
             });
@@ -154,13 +188,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Handle location selection
-    async function selectLocation(location) {
-        // In a real app, you would need to get coordinates for this location
-        // For now we'll just use the description
+    function selectLocation(location) {
         currentLocation = {
-            address: location.description,
-            coordinates: null // Would be set in a real implementation
+            address: location.display_name,
+            coordinates: {
+                lat: parseFloat(location.lat),
+                lng: parseFloat(location.lon)
+            }
         };
         
         localStorage.setItem('deliveryLocation', JSON.stringify(currentLocation));
@@ -168,36 +202,19 @@ document.addEventListener('DOMContentLoaded', function() {
         estimateDeliveryTime();
         locationModal.style.display = 'none';
     }
-    
-    // Update UI with current location
+
     function updateDeliveryInfo() {
         currentAddressEl.textContent = currentLocation.address;
     }
     
-    // Estimate delivery time from backend
-    async function estimateDeliveryTime() {
-        try {
-            const response = await fetch('/api/delivery/estimate', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    address: currentLocation.address,
-                    coordinates: currentLocation.coordinates
-                })
-            });
-            
-            const data = await response.json();
-            
-            if (response.ok) {
-                deliveryTimeEl.textContent = data.message;
-            } else {
-                throw new Error(data.error || 'Estimation failed');
-            }
-        } catch (error) {
-            console.error('Delivery estimation error:', error);
-            deliveryTimeEl.textContent = 'Delivery time unavailable';
-        }
+    function estimateDeliveryTime() {
+        const deliveryTimes = [
+            "Delivering in 8 minutes",
+            "Delivering in 10 minutes",
+            "Delivering in 15 minutes",
+            "Delivering in 20 minutes"
+        ];
+        const randomTime = deliveryTimes[Math.floor(Math.random()*deliveryTimes.length)];
+        deliveryTimeEl.textContent = randomTime;
     }
 });

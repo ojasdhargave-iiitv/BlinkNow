@@ -1,4 +1,3 @@
-// Add this to your categories.js file
 const products = {
     'amul-gold-milk': {
         id: 'amul-gold-milk',
@@ -37,7 +36,7 @@ const products = {
         price: '₹53',
         deliveryTime: '13 MINS',
         weight: '1 ltr',
-        image: 'pics/dairy/89cb3ef5-0003-4100-bcf4-f97092f30997.jpg',
+        image: 'pics/dairy/94c99c0b-0cb1-4c07-b91d-586c5300945b.avif',
         details: 'Amul Tazza Milky Milk is a pure and hygienic milk with a rich taste. It contains 4.5% fat and 8.5% SNF giving you thicker and creamier milk for your daily needs.'
     },
     'amul-chesse': {
@@ -87,7 +86,7 @@ const products = {
         price: '₹80',
         deliveryTime: '13 MINS',
         weight: 'shelf life: 4 days',
-        image: 'pics/dairy/c2b22cd4-b144-4266-901a-ff4ae82aa912.avif',
+        image: 'pics/dairy/d12b403a-0798-4e32-bd6c-7ea5e4608d53.jpg',
         details: 'The product is non-returnable. For a damaged, defective, expired or incorrect item, you can request a replacement within 24 hours of delivery. In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.'
     },
     'bread': {
@@ -97,7 +96,7 @@ const products = {
         price: '₹55',
         deliveryTime: '13 MINS',
         weight: 'shelf life: 5 days',
-        image: 'pics/dairy/94c99c0b-0cb1-4c07-b91d-586c5300945b.avif',
+        image: 'pics/dairy/c2813780-9847-46a9-8645-e1ef44e8c7f2.jpg',
         details: 'Made from 100% whole wheat grains, Britannia Whole Wheat Bread is a good source of fibre and essential nutrients. Soft and delicious, enjoy toasted bread with tea or roast it on pan for making crunchy croutons.'
     },
     'amul-masti': {
@@ -107,7 +106,7 @@ const products = {
         price: '₹75',
         deliveryTime: '13 MINS',
         weight: 'shelf life: 7 days',
-        image: 'pics/dairy/c2813780-9847-46a9-8645-e1ef44e8c7f2.jpg',
+        image: 'pics/dairy/c2b22cd4-b144-4266-901a-ff4ae82aa912.avif',
         details: 'This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery. In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.'
     },
 
@@ -245,29 +244,54 @@ const products = {
     },
     
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.scrollbox').forEach(item => {
+        item.addEventListener('click', function(e) {
+            if (e.target.closest('.addbutton')) return;
+            
+            const productId = this.getAttribute('data-product');
+            if (productId) {
+                showProduct(productId);
+                history.pushState({product: productId}, '', `#product-${productId}`);
+            }
+        });
+    });
+    document.querySelectorAll('.see').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const sectionTitle = this.closest('.tit').querySelector('.hot').textContent;
+            showSeeAllPage(sectionTitle);
+            history.pushState({section: sectionTitle}, '', `#see-all-${encodeURIComponent(sectionTitle)}`);
+        });
+    });
+    if (window.location.hash) {
+        const hash = window.location.hash.substring(1);
+        if (hash.startsWith('product-')) {
+            const productId = hash.replace('product-', '');
+            showProduct(productId);
+        } else if (hash.startsWith('see-all-')) {
+            const sectionTitle = decodeURIComponent(hash.replace('see-all-', ''));
+            showSeeAllPage(sectionTitle);
+        }
+    }
+});
 function showProduct(productId) {
     const product = products[productId];
     if (!product) return;
     
-    // Hide main content
-    document.querySelector('.mid').style.display = 'none';
-    document.querySelector('.grid-container').style.display = 'none';
-    document.querySelector('.banner').style.display = 'none';
-    document.querySelector('.categories').style.display = 'none';
-    document.querySelectorAll('.tit, .scrollcon, .scrollcon1').forEach(el => el.style.display = 'none');
-    document.querySelector('.banner1').style.display = 'none';
-    document.querySelector('.slogan').style.display = 'none';
-    document.querySelector('.decorline').style.display = 'none';
-    document.querySelector('.slogan1').style.display = 'none';
-    document.querySelector('.linkcontainer').style.display = 'none';
-    document.querySelector('.linkcontainer1').style.display = 'none';
-    document.querySelector('.trade').style.display = 'none';
-    document.querySelector('.downloadapp').style.display = 'none';
-    document.querySelector('.installcon').style.display = 'none';
-    document.querySelectorAll('.circon').forEach(el => el.style.display = 'none');
-    document.getElementById('categoryContent').style.display = 'none';
+    const sectionsToHide = [
+        '.mid', '.grid-container', '.banner', '.categories',
+        '.tit', '.scrollcon', '.scrollcon1', '.banner1',
+        '.slogan', '.decorline', '.slogan1', '.linkcontainer',
+        '.linkcontainer1', '.trade', '.downloadapp', '.installcon',
+        '.circon', '#categoryContent'
+    ];
     
-    // Create or show product content
+    sectionsToHide.forEach(selector => {
+        document.querySelectorAll(selector).forEach(el => el.style.display = 'none');
+    });
+
     let productContent = document.getElementById('productContent');
     if (!productContent) {
         productContent = document.createElement('div');
@@ -383,59 +407,107 @@ function showProduct(productId) {
     </div>
     `;
     
-    productContent.style.display = 'block'; 
-    
-    // Add back button functionality
-    document.getElementById('backToMain').addEventListener('click', function() {
-        // Show all main content
-        document.querySelectorAll('*').forEach(el => {
-            if (el.id !== 'productContent' && el.id !== 'backToMain') {
-                el.style.display = '';
-            }
-        });
-        
-        // Hide product content
-        productContent.style.display = 'none';
-        this.style.display = 'none';
-        
-        history.pushState({}, '', window.location.pathname);
-    });
+    productContent.style.display = 'block';
 }
 
-// Handle product clicks in scrollbox
-document.querySelectorAll('.scrollbox').forEach(item => {
-    item.addEventListener('click', function(e) {
-        // Don't trigger if clicking on the ADD button
-        if (e.target.closest('.addbutton')) return;
-        
-        const productId = this.getAttribute('data-product');
-        if (productId) {
-            showProduct(productId);
-            history.pushState({product: productId}, '', `#product-${productId}`);
-        }
+function showSeeAllPage(sectionTitle) {
+    const sectionsToHide = [
+        '.mid', '.grid-container', '.banner', '.categories',
+        '.tit', '.scrollcon', '.scrollcon1', '.banner1',
+        '.slogan', '.decorline', '.slogan1', '.linkcontainer',
+        '.linkcontainer1', '.trade', '.downloadapp', '.installcon',
+        '.circon', '#categoryContent', '#productContent'
+    ];
+    
+    sectionsToHide.forEach(selector => {
+        document.querySelectorAll(selector).forEach(el => el.style.display = 'none');
     });
-});
-
-// Update the popstate handler to handle product pages
+    const seeAllContent = document.getElementById('seeAllContent');
+    seeAllContent.innerHTML = `
+        <div class="category-header">
+            <h1 id="seeAllTitle">${sectionTitle}</h1>
+            <div class="sort-controls">
+                <span>Sort by:</span>
+                <button class="sort-btn active" data-sort="asc">Name (A-Z)</button>
+                <button class="sort-btn" data-sort="desc">Name (Z-A)</button>
+            </div>
+        </div>
+        <div class="products-grid" id="productsGrid"></div>
+        <div class="footerpage">
+            <!-- Your existing footer content -->
+        </div>
+    `;
+    
+    const section = Array.from(document.querySelectorAll('.hot'))
+        .find(el => el.textContent.includes(sectionTitle))
+        ?.closest('.tit')?.nextElementSibling;
+    
+    if (section) {
+        const scrollboxes = section.querySelectorAll('.scrollbox');
+        let productsData = [];
+        scrollboxes.forEach(box => {
+            const productId = box.getAttribute('data-product');
+            const product = products[productId];
+            if (product) {
+                productsData.push(product);
+            }
+        });
+        displaySortedProducts(productsData, 'asc');
+        document.querySelectorAll('.sort-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const sortOrder = this.getAttribute('data-sort');
+                displaySortedProducts(productsData, sortOrder);
+                document.querySelectorAll('.sort-btn').forEach(btn => 
+                    btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    }
+    
+    seeAllContent.style.display = 'block';
+}
+function displaySortedProducts(productsData, sortOrder) {
+    const productsGrid = document.getElementById('productsGrid');
+    productsGrid.innerHTML = '';
+    const sortedProducts = [...productsData].sort((a, b) => {
+        const nameA = a.title.toLowerCase();
+        const nameB = b.title.toLowerCase();
+        return sortOrder === 'asc' 
+            ? nameA.localeCompare(nameB)
+            : nameB.localeCompare(nameA);
+    });
+    
+    sortedProducts.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'see-all-product-card';
+        productCard.innerHTML = `
+            <img src="${product.image}" alt="${product.title}" class="see-all-product-image">
+            <h3 class="see-all-product-title">${product.title}</h3>
+            <p class="see-all-product-weight">${product.weight}</p>
+            <p class="see-all-product-price">${product.price}</p>
+            <p class="see-all-product-delivery">Delivery in ${product.deliveryTime}</p>
+            <button class="see-all-add-to-cart-btn">ADD TO CART</button>
+        `;
+        productCard.addEventListener('click', function(e) {
+            if (!e.target.closest('.see-all-add-to-cart-btn')) {
+                showProduct(product.id);
+                history.pushState({product: product.id}, '', `#product-${product.id}`);
+            }
+        });
+        productsGrid.appendChild(productCard);
+    });
+}
 window.addEventListener('popstate', function(event) {
     if (window.location.hash) {
         const hash = window.location.hash.substring(1);
         if (hash.startsWith('product-')) {
             const productId = hash.replace('product-', '');
             showProduct(productId);
-        } else {
-            showCategory(hash);
+        } else if (hash.startsWith('see-all-')) {
+            const sectionTitle = decodeURIComponent(hash.replace('see-all-', ''));
+            showSeeAllPage(sectionTitle);
         }
+    } else {
+        document.querySelectorAll('*').forEach(el => el.style.display = '');
     }
 });
-
-// Check URL on load for product pages
-if (window.location.hash) {
-    const hash = window.location.hash.substring(1);
-    if (hash.startsWith('product-')) {
-        const productId = hash.replace('product-', '');
-        showProduct(productId);
-    }
-}
-
-

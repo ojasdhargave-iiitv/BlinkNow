@@ -63,15 +63,15 @@ body{
 }
 .add {
     display: flex;
-    flex-direction: column; /* Keep Delivering & Address stacked */
+    flex-direction: column;
 }
 
 .add-bottom {
     display: flex;
     align-items: center;
     padding: 0px 5px;
-    justify-content: space-between; /* Push dropdown to the right */
-    width: 100%; /* Ensure full width for proper spacing */
+    justify-content: space-between;
+    width: 100%; 
 }
 
 .add1{
@@ -162,13 +162,8 @@ body{
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .mid{
@@ -257,6 +252,13 @@ p{
     overflow: hidden;
     background-color: rgb(234, 234, 234);
 }
+.search3 {
+    cursor: pointer;
+}
+.search3:focus {
+    outline: none;
+    border-color: green;
+}
 .search2::placeholder,.search3::placeholder{
     font-weight:bold ;
     color: black;
@@ -276,11 +278,11 @@ p{
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    gap: 20px; /* Space between boxes */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
     padding: 20px;
     margin: auto;
-    width: 80%; /* Adjust width as needed */
+    width: 80%; 
 }
 
 .grid-item {
@@ -587,11 +589,11 @@ p{
     gap: 10px;
     padding:20px;
     scroll-snap-type: x mandatory;
-    scrollbar-width: none; /*hide scrolbar in firefox*/
+    scrollbar-width: none; 
     margin-left: 25px;
 }
 .scrollbar1::-webkit-scrollbar{
-    display: none; /*hide scrolbar in chrome*/
+    display: none; 
 }
 .scrollbox1{
     min-width: 190px;
@@ -808,7 +810,7 @@ p{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #3b5998; /* Example color */
+    background-color: #3b5998;
     cursor: pointer;
 }
 .footer-container {
@@ -839,8 +841,6 @@ p{
 }
 
 
-
-            /* Login Overlay Styles */
             .login-overlay {
                 position: fixed;
                 top: 0;
@@ -1068,7 +1068,6 @@ p{
                     padding: 20px;
                     }
 
-/* Product Page Styles */
 .product-detail-container {
     display: flex;
     gap: 40px;
@@ -1164,4 +1163,132 @@ p{
     font-size: 16px;
     color: #666;
     line-height: 1.5;
+}
+
+
+            #seeAllContent {
+                margin-top: 95px;
+                padding: 20px;
+            }
+
+            .see-all-grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .see-all-product-card {
+                background-color: white;
+                border-radius: 10px;
+                padding: 15px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+
+            .see-all-product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+
+            .see-all-product-image {
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+                margin-bottom: 15px;
+            }
+
+            .see-all-product-title {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                color: #333;
+            }
+
+            .see-all-product-weight {
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 5px;
+            }
+
+            .see-all-product-price {
+                font-size: 18px;
+                font-weight: 700;
+                color: #333;
+                margin-bottom: 5px;
+            }
+
+            .see-all-product-delivery {
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 15px;
+            }
+
+            .see-all-add-to-cart-btn {
+                width: 100%;
+                padding: 10px;
+                background-color: #f0fff0;
+                border: 1px solid #10a310;
+                color: #10a310;
+                border-radius: 5px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .see-all-add-to-cart-btn:hover {
+                background-color: #10a310;
+                color: white;
+            }
+            #liveLocationInput {
+                background-color: #f8f8f8;
+                color: #333;
+                cursor: default; 
+            }
+
+.sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.sort-controls span {
+    font-weight: 600;
+    color: #555;
+}
+
+.sort-btn {
+    padding: 8px 16px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.sort-btn:hover {
+    background-color: #eee;
+}
+
+.sort-btn.active {
+    background-color: green;
+    color: white;
+    border-color: green;
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+#seeAllContent .footerpage {
+    display: block !important;
+    margin-top: 40px;
 }

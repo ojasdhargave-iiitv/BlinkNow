@@ -15,20 +15,6 @@
             <div class="logo">blink<span class="now">Now</span></div>
         </div>
         <div class="box2">
-            <!-- <div class="add">
-                <div class="add1">Delivering in 8 minutes</div>
-                <div class="add-bottom">
-                    <div class="add2">IIIT Vadodara, Gandhinagar, Gujarat, India</div>
-                    <div class="dropdown">
-                        <button class="dropbtn">&#8595;</button>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="add">
                 <div class="add1" id="deliveryTime">Detecting your location...</div>
                 <div class="add-bottom">
@@ -43,7 +29,6 @@
                 </div>
             </div>
             
-            <!-- Add this modal for location selection -->
             <div class="modal" id="locationModal" style="display:none;">
                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
@@ -78,7 +63,7 @@
         </div>
         <div>
             <div><input type="text" placeholder="Search for Groceries, Electronics And Stationaries..." class="search2"></div>
-            <div><input type="text" placeholder="Enter your Delivery Location" class="search3"></div>
+            <div><input type="text" placeholder="Enter your Delivery Location" class="search3" id="deliveryLocationInput"></div>
         </div>
         <div class="greet">
             <span class="wel">WELCOME</span><br>Order Now to avail Exiting offers!!
@@ -240,14 +225,21 @@
         </div>
     </div>
 
-    <!-- Add this container where category content should appear -->
     <div id="categoryContent" style="display:none;">
         <div class="category-header">
             <h1 id="categoryTitle">Category Title</h1>
             <p id="categoryDescription">Category description</p>
         </div>
         <div class="products-grid-container" id="productsContainer">
-            <!-- Products will be loaded here -->
+        </div>
+    </div>
+
+
+    <div id="seeAllContent" style="display:none;">
+        <div class="category-header">
+            <h1 id="seeAllTitle">All Products</h1>
+        </div>
+        <div class="see-all-grid-container" id="seeAllProductsContainer">
         </div>
     </div>
 
