@@ -1,40 +1,29 @@
-// Wait for DOM to be fully ready
-document.addEventListener('DOMContentLoaded', function() {
-    // Get elements
-    const loginBtn = document.querySelector('.login');
-    const loginOverlay = document.getElementById('loginOverlay');
-    const closeLogin = document.getElementById('closeLogin');
-    const loginForm = document.getElementById('loginForm');
+document.querySelector('.button').addEventListener('click', async () => {
+  const phone = document.querySelector('.num').value.trim();
+  const password = document.querySelector('.pass').value.trim();
 
-    // Check if elements exist
-    if (!loginBtn || !loginOverlay || !closeLogin || !loginForm) {
-        console.error('Login elements not found!');
-        return;
+  if (!phone || !password) {
+    alert("Please enter both phone number and password.");
+    return;
+  }
+
+  try {
+    const response = await fetch("http://localhost:3000/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phone, password })
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert("Login successful!");
+      window.location.href = "blinknow.html"; // Redirect on success
+    } else {
+      alert(result.message || "Login failed.");
     }
-
-    // Add event listeners
-    loginBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        loginOverlay.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    });
-
-    closeLogin.addEventListener('click', function() {
-        loginOverlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
-
-    loginOverlay.addEventListener('click', function(e) {
-        if (e.target === loginOverlay) {
-            loginOverlay.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
-
-    loginForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Login functionality would go here!');
-        loginOverlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
+  } catch (err) {
+    console.error("Error logging in:", err);
+    alert("Something went wrong. Please try again.");
+  }
 });
