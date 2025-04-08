@@ -1,0 +1,104 @@
+.in {
+    animation: fade-in 4s 0s alternate;
+    display: flex;
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.img {
+    height: 400px;
+    border-radius: 20px;
+}
+
+body {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.right {
+    animation: fade-in 8s 0s alternate;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.logopng {
+    height: 55px;
+    margin-top: 15px;
+    border-radius: 20px;
+    margin-left: 150px;
+    align-self: center;
+}
+
+.etc {
+    display: block;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    line-height: 0px;
+}
+
+.num {
+    width: 237px;
+    height: 30px;
+    margin-left: 50px;
+    margin-bottom: 2px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.button {
+    background-color: grey;
+    margin-left: 50px;
+    height: 35px;
+    width: 240px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.ggl {
+    height: 50px;
+    margin-left: 20px;
+    background-color: white;
+    width: 300px;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.ggl:hover {
+    cursor: pointer;
+}
+
+.gglim {
+    width: 40px;
+}
+
+.ggl:active {
+    opacity: 0.4;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
