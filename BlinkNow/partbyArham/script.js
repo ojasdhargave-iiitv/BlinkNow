@@ -29,6 +29,7 @@ function checklogin() {
             if (found) {
                 msg.textContent = " Login successful!";
                 msg.style.color = "green";
+                 window.location.href = "blinknow.html"; 
             } else {
                 msg.textContent = " Wrong phone or password!";
                 msg.style.color = "red";
